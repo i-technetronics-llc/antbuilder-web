@@ -1,7 +1,13 @@
+import Container from "@/components/common/Container";
+import Nav from "@/components/common/Nav";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen font flex-col items-center justify-between p-24">
+    <Container>
+      <header>
+        <Nav />
+      </header>
+    </Container>
 
-    </main>
   )
 }
