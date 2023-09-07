@@ -26,7 +26,7 @@ const Button = ({
             "w-full": fullWidth,
             "hover:opacity-80 hover:scale-95": !disableZoomOutEffect,
             "opacity-70 pointer-events-none": disabled,
-            "rounded-full": rounded
+            "!rounded-full": rounded
         }
     );
 
