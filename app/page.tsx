@@ -1,11 +1,39 @@
+import Button from "@/components/common/Button";
 import Container from "@/components/common/Container";
 import Nav from "@/components/common/Nav";
+import { BsChevronRight } from 'react-icons/bs'
+import { millik, openSans } from "./font";
 
 export default function Home() {
   return (
     <Container>
-      <header>
+      <header className="">
         <Nav />
+        <section className="text-center mt-10 lg:mt-20">
+          <div className="mb-20 text-trueGray-300">
+            <h3 className="text-4xl lg:text-5xl font-semibold text-trueGray-500 mb-4">Build your Apps</h3>
+
+            <h1 className={`text-[64px] ${millik.className} text-trueGray-500 mb-2.5 leading-tight lg:leading-normal`}>
+              Faster and Better
+            </h1>
+
+            <p className="text-2xl mb-[23px]">
+              Launch
+              <span className={`text-primary-600 ${openSans.className} mx-1`}>5x Faster</span> &
+              <span className={`text-primary-600 ${openSans.className} mx-1`}>2x Cheaper</span>
+            </p>
+
+            <p className="text-2xl font-medium">Test your builds biweekly with our data-driven app development platform</p>
+          </div>
+
+          <Button
+            className="!text-2xl font-light py-3 px-5"
+            rounded
+            Icon={<BsChevronRight className="text-2xl" />}
+            iconDir="right">
+            Get Started
+          </Button>
+        </section>
       </header>
     </Container>
 

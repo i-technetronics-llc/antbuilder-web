@@ -2,6 +2,11 @@ import clsx from "clsx";
 import { CustomButtonProps } from "./type";
 import Link from "next/link";
 
+interface ButtonIconProps {
+    Icon: React.ReactNode,
+    iconDir: "left" | "right"
+}
+
 const Button = ({
     children,
     variant = "normal",
@@ -11,12 +16,14 @@ const Button = ({
     disableZoomOutEffect,
     disabled,
     href,
+    Icon,
     rounded,
+    iconDir = "left",
     ...rest
 }: CustomButtonProps) => {
     // Generate dynamic class names based on variant and fullWidth
     const buttonClass = clsx(
-        `px-5 inline-block py-2 rounded-lg transition capitalize text-base cursor-pointer`,
+        `px-5 inline-flex items-center py-2.5 rounded-lg transition capitalize text-base cursor-pointer`,
         {
             "bg-primary text-white": variant === "normal",
             "bg-white text-primary": variant === "inverse",
@@ -26,13 +33,15 @@ const Button = ({
             "w-full": fullWidth,
             "hover:opacity-80 hover:scale-95": !disableZoomOutEffect,
             "opacity-70 pointer-events-none": disabled,
-            "!rounded-full": rounded
+            "!rounded-full": rounded,
+            "flex-row-reverse": iconDir === "right"
         }
     );
 
     if (href) {
         return (
             <Link className={`${buttonClass} ${className}`} href={href}>
+                <ButtonIcon Icon={Icon} iconDir={iconDir} />
                 {children}
             </Link>
         )
@@ -43,9 +52,16 @@ const Button = ({
             className={`${buttonClass} ${className}`}
             {...rest}
         >
+            <ButtonIcon Icon={Icon} iconDir={iconDir} />
             {children}
         </button>
     );
 };
 
 export default Button;
+
+const ButtonIcon = ({ Icon, iconDir }: ButtonIconProps) => (
+    <span className={`${iconDir === "left" ? "mr-2" : "ml-2"}`}>
+        {Icon}
+    </span>
+)

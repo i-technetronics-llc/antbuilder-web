@@ -7,5 +7,7 @@ export type  CustomButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
     fullWidth?: boolean
     rounded?: boolean
     href?: string
+    Icon?: React.ReactNode
+    iconDir?: "left" | "right"
 }
 

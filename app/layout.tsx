@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body className={mukta.className}>
+      <body className={`${mukta.className} text-trueGray`}>
         {children}
       </body>
     </html>

@@ -22,10 +22,9 @@ const config: Config = {
           200: "#EDF4FF",
           DEFAULT: "#3B82F6",
           600: "#5A77A7",
-          900: "#11223F",
         },
         trueGray: {
-          300: "#11223F",
+          300: "#4E5765",
           DEFAULT: "#3B4350",
           500: "#11223F",
 
