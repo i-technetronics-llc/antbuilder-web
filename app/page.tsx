@@ -5,6 +5,7 @@ import { BsChevronRight } from 'react-icons/bs';
 import { millik, openSans } from "./font";
 import FeatureSection from "@/components/Home/FeatureSection";
 import BenefitSection from "@/components/Home/BenefitSection";
+import CTASection from "@/components/Home/CTASection";
 
 export default function Home() {
   return (
@@ -42,7 +43,7 @@ export default function Home() {
       </header >
       <FeatureSection />
       <BenefitSection />
-
+      <CTASection />
     </div>
   )
 }
