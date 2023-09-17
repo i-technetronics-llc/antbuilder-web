@@ -1,8 +1,9 @@
 import Button from "@/components/common/Button";
 import Container from "@/components/common/Container";
 import Nav from "@/components/common/Nav";
-import { BsChevronRight } from 'react-icons/bs'
+import { BsChevronRight } from 'react-icons/bs';
 import { millik, openSans } from "./font";
+import FeatureSection from "@/components/Home/FeatureSection";
 import BenefitSection from "@/components/Home/BenefitSection";
 
 export default function Home() {
@@ -39,6 +40,7 @@ export default function Home() {
 
         </Container>
       </header >
+      <FeatureSection />
       <BenefitSection />
 
     </div>

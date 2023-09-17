@@ -12,7 +12,7 @@ interface Props {
     className?: string
 }
 
-const BenefitCard = ({ src, title, description, moreLink, className = "" }: Props) => {
+const FeatureCard = ({ src, title, description, moreLink, className = "" }: Props) => {
     return (
         <div className={`rounded-[18px] w-full max-w-[352px] bg-white p-6 ${className} flex flex-col transition-transform duration-300 `}>
             <Image src={src} alt={`${title} image`} width={328} height={248.307} className='mb-5' />
@@ -30,4 +30,4 @@ const BenefitCard = ({ src, title, description, moreLink, className = "" }: Prop
     )
 }
 
-export default BenefitCard
+export default FeatureCard
