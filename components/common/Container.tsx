@@ -7,7 +7,7 @@ interface Props {
 
 const Container = ({ children, className }: Props) => {
     return (
-        <div className={`container ${className}`}>{children}</div>
+        <div className={`container xl:px-8 ${className}`}>{children}</div>
     )
 }
 
