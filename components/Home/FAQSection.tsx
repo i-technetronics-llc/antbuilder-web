@@ -23,7 +23,7 @@ const FAQSection = () => {
                 <p className={`text-lg lg:text-xl text-trueGray-300 ${openSans.className}`}>We have compiled a list of commonly asked questions for you</p>
             </div>
 
-            <Container className='space-y-4 mx-auto w-full max-w-4xl'>
+            <Container className='space-y-4 mx-auto w-full max-w-5xl'>
                 {
                     faqdata.map((faq, idx) => {
                         const isActive = idx === active

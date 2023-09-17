@@ -7,6 +7,7 @@ import FeatureSection from "@/components/Home/FeatureSection";
 import BenefitSection from "@/components/Home/BenefitSection";
 import CTASection from "@/components/Home/CTASection";
 import FAQSection from "@/components/Home/FAQSection";
+import Footer from "@/components/common/Footer";
 
 export default function Home() {
   return (
@@ -46,6 +47,7 @@ export default function Home() {
       <BenefitSection />
       <CTASection />
       <FAQSection />
+      <Footer />
     </div>
   )
 }
