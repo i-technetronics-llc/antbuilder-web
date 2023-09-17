@@ -29,6 +29,9 @@ const config: Config = {
           500: "#11223F",
 
         }
+      },
+      transitionProperty: {
+      height: 'height'
       }
     },
   },

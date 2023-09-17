@@ -6,6 +6,7 @@ import { millik, openSans } from "./font";
 import FeatureSection from "@/components/Home/FeatureSection";
 import BenefitSection from "@/components/Home/BenefitSection";
 import CTASection from "@/components/Home/CTASection";
+import FAQSection from "@/components/Home/FAQSection";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
       <FeatureSection />
       <BenefitSection />
       <CTASection />
+      <FAQSection />
     </div>
   )
 }
