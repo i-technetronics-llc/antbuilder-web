@@ -1,13 +1,14 @@
-import Button from "@/components/common/Button";
-import Container from "@/components/common/Container";
-import Nav from "@/components/common/Nav";
-import { BsChevronRight } from 'react-icons/bs';
-import { millik, openSans } from "./font";
-import FeatureSection from "@/components/Home/FeatureSection";
+import AchievementSection from "@/components/Home/AchievementSection";
 import BenefitSection from "@/components/Home/BenefitSection";
 import CTASection from "@/components/Home/CTASection";
 import FAQSection from "@/components/Home/FAQSection";
+import FeatureSection from "@/components/Home/FeatureSection";
+import Button from "@/components/common/Button";
+import Container from "@/components/common/Container";
 import Footer from "@/components/common/Footer";
+import Nav from "@/components/common/Nav";
+import { BsChevronRight } from 'react-icons/bs';
+import { millik, openSans } from "./font";
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
       </header >
       <FeatureSection />
       <BenefitSection />
+      <AchievementSection />
       <CTASection />
       <FAQSection />
       <Footer />

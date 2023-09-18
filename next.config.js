@@ -1,7 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    fastRefresh: true,
-    swcMinify: true
-}
+const nextConfig = {}
 
 module.exports = nextConfig

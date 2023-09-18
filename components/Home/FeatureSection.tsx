@@ -7,7 +7,7 @@ import FeatureCard from './FeatureCard'
 
 const FeatureSection = () => {
     return (
-        <section className='lg:-mb-7'>
+        <section className='mb-5 lg:-mb-7'>
             <div className='bg-primary-200 pb-8 pt-32 text-center space-y-10 flex flex-col items-center mb-10'>
                 <span className='text-[28px] font-bold'>
                     ANTBUILDER BENEFITS

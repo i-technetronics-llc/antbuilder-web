@@ -29,9 +29,9 @@ const FAQSection = () => {
                         const isActive = idx === active
                         return (
                             <div key={`faq-${idx}`}>
-                                <div className='flex text-trueGray space-x-6 items-center justify-between py-6 border-b border-[#808080]'>
+                                <div onClick={() => handleActiveFaq(idx)} className='flex text-trueGray space-x-6 items-center justify-between py-6 border-b border-[#808080]'>
                                     <h4 className={`text-base lg:text-2xl font-medium  ${mukta.className}`}>{faq.question}</h4>
-                                    <button className='text-lg font-medium inline-block' onClick={() => handleActiveFaq(idx)} >
+                                    <button className='text-lg font-medium inline-block'  >
                                         {isActive ? <LiaMinusCircleSolid className="animate-in fade-in rotate-180" /> : <LiaPlusCircleSolid className="animate-in fade-in rotate-180" />}
                                     </button>
                                 </div>

@@ -8,7 +8,7 @@ const CTASection = () => {
     return (
         <Container className='mb-16'>
             <section className='bg-trueGray-500 px-6 py-10 rounded-[20px] space-y-6 w-full max-w-5xl mx-auto mt-10 text-center shadow-[0px_0px_20px_0px_rgba(128,128,128,0.25)] text-white'>
-                <h2 className={`text-3xl lg:text-[40px] ${millik.className}`}>
+                <h2 className={`text-3xl lg:text-[40px] ${millik.className} leading-snug`}>
                     Transform your vision into reality with Antbuilder
                 </h2>
                 <p className={`text-lg lg:text-xl mx-auto lg:w-[40ch] ${mukta.className} `}>

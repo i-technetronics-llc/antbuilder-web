@@ -31,7 +31,8 @@ export default function Footer() {
                         Launch apps faster and cheaper. Connect with expert developers, access customizable code modules, and enjoy dedicated support. Experience efficient app development with regular updates.
                     </div>
                 </div>
-                <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0 space-x-0 lg:space-x-10">
+
+                <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0 space-x-0 lg:space-x-14">
                     <div className="flex flex-col">
                         <h4 className={`${mukta.className} text-lg lg:text-xl font-bold`}>Company</h4>
                         {navigation.map((item, index) => (

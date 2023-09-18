@@ -45,7 +45,7 @@ const BenefitSection = () => {
                 reverse
                 backgroundColorVariant='white' />
 
-            <div className='bg-primary-200 h-[222px] backdrop-blur-[5px] relative -z-10' />
+            <div className='bg-primary-200 h-[222px] backdrop-blur-[5px] relative -z-10 hidden lg:block' />
         </section>
     )
 }
