@@ -9,14 +9,14 @@ import Footer from "@/components/common/Footer";
 import Nav from "@/components/common/Nav";
 import { BsChevronRight } from 'react-icons/bs';
 import { millik, openSans } from "./font";
-
+import Image from 'next/image'
 export default function Home() {
   return (
-    <div className="pb-10">
-      <header className="mb-14">
+    <div className="pb-10" >
+      <header className="">
         <Container>
           <Nav />
-          <section className="text-center mt-10 lg:mt-20">
+          <section className="text-center mt-10 lg:mt-20 bg-no-repeat bg-center bg-cover bg-[url('/images/homebg.svg')]">
             <div className="mb-20 text-trueGray-300">
               <h3 className="text-4xl lg:text-5xl font-semibold text-trueGray-500 mb-4">Build your Apps</h3>
 
@@ -41,7 +41,11 @@ export default function Home() {
               Get Started
             </Button>
           </section>
+          <figure className=' max-w-[1053px] max-h-[478px]  mx-auto '>
+          <Image src="/images/homeimg.svg" alt="Earth View" width={1500} height={550} />
+        </figure>
 
+      
         </Container>
       </header >
       <FeatureSection />
