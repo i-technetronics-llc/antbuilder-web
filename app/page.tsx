@@ -36,13 +36,14 @@ export default function Home() {
             <Button
               className="!text-2xl font-light py-3 px-5"
               rounded
+             
               Icon={<BsChevronRight className="text-2xl" />}
               iconDir="right">
               Get Started
             </Button>
           </section>
-          <figure className=' max-w-[1053px] max-h-[478px]  mx-auto '>
-          <Image src="/images/homeimg.svg" alt="Earth View" width={1500} height={550} />
+          <figure className=' max-w-[1100px] max-h-[478px]  mx-auto '>
+          <Image src="/images/homeimg.svg" alt="Earth View" width={1800} height={550} />
         </figure>
 
       

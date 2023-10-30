@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className="mb-10 lg:mb-0">
                     <Logo />
 
-                    <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
+                    <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400 text-[16px]">
                         Launch apps faster and cheaper. Connect with expert developers, access customizable code modules, and enjoy dedicated support. Experience efficient app development with regular updates.
                     </div>
                 </div>

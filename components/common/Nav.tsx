@@ -23,7 +23,7 @@ const links = [
     },
     {
         title: "Our Projects",
-        href: "#"
+        href: "/projects"
     },
     {
         title: "Blog",
@@ -62,7 +62,7 @@ const Nav = ({ inverse }: Props) => {
     );
 
     return (
-        <nav className='py-5 flex items-center justify-between'>
+        <nav className='py-5 max-w-[1248px] m-auto flex items-center justify-between'>
             <Logo />
 
             <div className={`${containerClasses}`}>
