@@ -9,7 +9,7 @@ const BenefitSection = () => {
                 <p className={`text-lg lg:text-2xl text-trueGray-300 ${openSans.className}`}>Develop your software from pre-made components exclusively available to you</p>
             </div>
 
-            <BenefitCard className=''
+            <BenefitCard
                 title='24/7 Talent Dedicated to You'
                 src='/images/benefit-img-1.png'
                 description='Dedicated team of developers working on your App 24 hours a day, 7 days a week, with the ability to add more resources if the need arises or you revise the go-to-market delivery date' />

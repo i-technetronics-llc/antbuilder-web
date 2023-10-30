@@ -6,6 +6,7 @@ import Nav from "@/components/common/Nav";
 import Divider from "@/components/solutions/Divider"
 import AllStar from "@/components/solutions/StarTeam"
 import BusinessTeam from "@/components/solutions/BusinessTeam"
+import DevelopmentTeam from "@/components/solutions/DevelopmentTeam"
 function page() {
   return (
     <div>
@@ -13,6 +14,9 @@ function page() {
       <HeroSection/>
       <AllStar/>
       <BusinessTeam/>
+      <Divider />
+
+      <DevelopmentTeam/>
       <Divider />
         <CTASection/>
         <Footer/>
