@@ -6,27 +6,27 @@ import Link from 'next/link'
 
 const  projects =[
   {
-    img:"/images/edBg.svg",
+    img:"/images/edg.svg",
     title:"EdCheck",
     link:"",
     absoluteimg:"/images/edtech.svg",
     description:"EdCheck is a platform that allows students to get direct and personalized feedback on their course questions and homework attempts.",
   },
   {
-    img:"/images/hobbyBg.svg",
+    img:"/images/hobg.svg",
     title:"Hobbyist",
     link:"",
 
     description:"This app is intended for collectors who want to inventory and understand the value of their collection over time.",
   },
   {
-    img:"/images/ezBg.svg",
+    img:"/images/exg.svg",
     title:"EzyMedik",
     link:"",
     description:"The EzyMedik App provides bill payment via NHIS providers, ambulance requests, medication orders, appointment management, health information, secure health records, and hospital location services",
   },
   {
-    img:"/images/ezBg.svg",
+    img:"/images/exg.svg",
     title:"World Main Market",
     link:"",
     description:"World Main Market brings physical markets and stores around you to your phone. have a direct access with store owners without going to the market",
@@ -41,8 +41,8 @@ function projectCard() {
       {projects.map((project)=>(
         <div className='flex flex-col max-w-[1280px] my-10  space-x-10 items-center  m-auto md:flex-row' key={project.title} >
      
-           <figure className='max-w-[389px] max-h-[271px] m-auto'>
-              <Image src={project.img} width={389} height={271} alt='hh' />
+           <figure className='max-w-[443px] max-h-[271px] m-auto'>
+              <Image src={project.img} width={443} height={271} alt='hh' />
               {/* <div className='max-w-[150px] max-h-[150px]'>
               <Image src={project.absoluteimg} width={150} height={150} alt='hh' className='absolute top-1/2 bottom-10 left-[310px]' />
               </div> */}
