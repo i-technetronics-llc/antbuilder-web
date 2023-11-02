@@ -38,7 +38,7 @@ function CoreValues() {
     
     <div className="p-4">
       <div className={`${mukta.className} text-[32px] font-[700]`}>Customer Focus</div>
-      <p className={`${openSans.className} text-[20px] font-[400]`}>Prioritizing the needs and goals of customers, aiming to understand their requirements and provide software solutions that help their businesses scale fast. This value emphasizes the customer-centric approach mentioned in the vision statements</p>
+      <p className={`${openSans.className} text-[20 px] font-[400]`}>Prioritizing the needs and goals of customers, aiming to understand their requirements and provide software solutions that help their businesses scale fast. This value emphasizes the customer-centric approach mentioned in the vision statements</p>
     </div>
   </div>
 </div>

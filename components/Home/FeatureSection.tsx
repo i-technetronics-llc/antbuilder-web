@@ -8,16 +8,16 @@ import FeatureCard from './FeatureCard'
 const FeatureSection = () => {
     return (
         <section className='mb-5' >
-            <div className='bg-primary-200 pb-8 pt-32 text-center space-y-10 flex flex-col items-center mb-10'>
+            <div className='bg-primary-200  py-[61px] text-center flex flex-col items-center mb-10'>
                 <span className='text-[28px] font-bold'>
                     ANTBUILDER BENEFITS
                 </span>
-                <h2 className={`text-4xl lg:text-[52px] text-trueGray-300 lg:w-[29ch] leading-snug ${millik.className}`}>
+                <h2 className={`text-4xl lg:text-[52px] mt-[24px] text-trueGray-300 lg:w-[29ch] leading-snug ${millik.className}`}>
                     Unleash the Power of Iterative App Development with Antbuilder
                 </h2>
             </div>
 
-            <Container className='grid grid-cols-1 lg:grid-cols-[repeat(3,352px)] grid-rows-2 gap-3 lg:gap-0 isolate mx-auto w-fit h-fit'>
+            <Container className="grid grid-cols-1 lg:grid-cols-[repeat(3,352px)] grid-rows-2 gap-3 lg:gap-0 isolate mx-auto w-fit h-fit bg-[url('/images/cardbg.png')]">
                 <FeatureCard
                     src='/images/feature-build.png'
                     title='Build'

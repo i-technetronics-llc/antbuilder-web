@@ -38,8 +38,6 @@ const Button = ({
         }
     );
 
-  
-
     if (href) {
         return (
             <Link className={`${buttonClass} ${className}`} href={href}>

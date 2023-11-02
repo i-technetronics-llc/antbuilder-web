@@ -24,7 +24,7 @@ const BenefitCard = ({ title, src, alt, description, reverse, containerHeight, t
         <div
             className={`${backgroundColorVariant === "white" ? "bg-white" : "bg-primary-200"} ${containerHeight ? containerHeight : "lg:h-[560px]"}  overflow-visible lg:pt-20 pt-24`}
         >
-            <Container className='max-w-[1120px] m-auto'>
+            <Container className='max-w-[1200px] m-auto'>
                 <div className={`
                     flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} items-center justify-between ${reverse ? "space-x-0" : "space-x-24"}
                     `}>

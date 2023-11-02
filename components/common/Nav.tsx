@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { FaTimes } from "react-icons/fa"
 import { GiHamburgerMenu } from "react-icons/gi"
-import Button from './Button'
+import Button from './Button2'
 import Logo from './Logo'
 import clsx from 'clsx'
 
@@ -62,7 +62,7 @@ const Nav = ({ inverse }: Props) => {
     );
 
     return (
-        <nav className='py-5 max-w-[1248px] m-auto flex items-center justify-between'>
+        <nav className=' max-w-[1248px] p-[16px] flex items-center justify-between'>
             <Logo />
 
             <div className={`${containerClasses}`}>
@@ -77,14 +77,35 @@ const Nav = ({ inverse }: Props) => {
 
                     )
                 })}
-                <Button variant='outline' rounded className='inline-block lg:hidden'>
+
+                <Link href='/'>
+                <button  className='inline-block lg:hidden px-[16px] text-black '>
+                    Log In
+                </button>
+                </Link>
+                <button  className='inline-block lg:hidden px-[16px] py-[8px]  border-[1px] border-[#3B82F6] rounded-[40px]'>
                     Get Started
-                </Button>
+                </button>
+             
             </div>
 
-            <Button variant='outline' rounded className='hidden lg:inline-block'>
+              <div className='flex items-center justify-between gap-[16px]'>
+
+                {/* large screen */}
+                <Link href='/'>
+                <button  className='hidden lg:inline-block px-[16px] text-black '>
+                    Log In
+                </button>
+                </Link>
+               
+               <button className='hidden lg:inline-block px-[16px] py-[8px]  border-[1px] border-[#3B82F6] rounded-[40px]'>
                 Get Started
-            </Button>
+            </button>  
+             </div>
+            
+            {/* <button variant='outline' rounded className='hidden lg:inline-block'>
+                Get Started
+            </button> */}
 
             <button title='hamburger-icon' className={`lg:hidden font-bold text-2xl z-30 ${!inverse ? "text-primary" : "text-trueGray-500"}`} onClick={handleHamburgerClicked}>
                 {

@@ -1,18 +1,22 @@
 import { openSans } from '@/app/font'
 import BenefitCard from './BenefitCard'
+import React from 'react'
+import Image from 'next/image'
 
 const BenefitSection = () => {
     return (
         <section >
-            <div className='bg-primary-200 pb-8 pt-16 text-center space-y-2 flex flex-col items-center -mb-12 lg:-mb-0'>
-                <h3 className='font-bold text-[28px] text-trueGray'>ANTBUILDER MODE OF OPERATION</h3>
+            <div className="bg-primary-200 pb-8 pt-16 text-center  space-y-2 flex flex-col items-center -mb-12 lg:-mb-0 ">
+                <h3 className='font-bold text-[28px] text-trueGray '>ANTBUILDER MODE OF OPERATION</h3>
                 <p className={`text-lg lg:text-2xl text-trueGray-300 ${openSans.className}`}>Develop your software from pre-made components exclusively available to you</p>
             </div>
 
+            <div className="bg-repeat bg-center bg-auto bg-[url('/images/247bg.svg')]">
             <BenefitCard
                 title='24/7 Talent Dedicated to You'
                 src='/images/benefit-img-1.png'
                 description='Dedicated team of developers working on your App 24 hours a day, 7 days a week, with the ability to add more resources if the need arises or you revise the go-to-market delivery date' />
+            </div>
 
             <BenefitCard
                 title='Faster, Cheaper, Better, Smarter!'

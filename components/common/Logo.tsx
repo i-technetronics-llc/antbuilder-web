@@ -10,7 +10,7 @@ const Logo = ({ className }: Props) => {
         <Link href='/'>
         <div className='flex items-center space-x-3 cursor-pointer' >
 
-            <Image src={"/images/Logo.svg"} alt='Antbuilder Logo' width={180} height={150}/>
+            <Image src={"/images/Logo.svg"} alt='Antbuilder Logo' width={210} height={150}/>
            
         </div>
         </Link>

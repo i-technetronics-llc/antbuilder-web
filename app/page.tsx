@@ -10,31 +10,32 @@ import Nav from "@/components/common/Nav";
 import { BsChevronRight } from 'react-icons/bs';
 import { millik, openSans } from "./font";
 import Image from 'next/image'
+import Animate from "@/components/Home/animate";
 export default function Home() {
   return (
     <div className="pb-10" >
       <header className="">
         <Container>
           <Nav />
-          <section className="text-center mt-10 lg:mt-20 bg-no-repeat bg-center bg-cover bg-[url('/images/homebg.svg')]">
-            <div className="mb-20 text-trueGray-300">
-              <h3 className="text-4xl lg:text-5xl font-semibold text-trueGray-500 mb-4">Build your Apps</h3>
+          <section className="text-center mt-10 lg:mt-[48px] bg-no-repeat bg-center bg-cover bg-[url('/images/homebg.svg')]">
+            <div className=" text-trueGray-300">
+              <h3 className="text-4xl lg:text-5xl font-semibold text-trueGray-500 ">Build your Apps</h3>
 
-              <h1 className={`text-[64px] ${millik.className} text-trueGray-500 mb-2.5 leading-tight lg:leading-normal`}>
+              <h1 className={`text-[64px] ${millik.className} text-trueGray-500 mt-[16px] leading-tight lg:leading-normal`}>
                 Faster and Better
               </h1>
 
-              <p className="text-2xl mb-[23px]">
+              <p className="text-2xl mt-[27px]">
                 Launch
                 <span className={`text-primary-600 ${openSans.className} mx-1`}>5x Faster</span> &
                 <span className={`text-primary-600 ${openSans.className} mx-1`}>2x Cheaper</span>
               </p>
 
-              <p className="text-2xl font-medium">Test your builds biweekly with our data-driven app development platform</p>
+              <p className="text-2xl mt-[12px] font-medium">Test your builds biweekly with our data-driven app development platform</p>
             </div>
 
             <Button
-              className="!text-2xl font-light py-3 px-5"
+              className="!text-2xl font-light mt-[24px] py-3 px-5"
               rounded
              
               Icon={<BsChevronRight className="text-2xl" />}
@@ -42,7 +43,7 @@ export default function Home() {
               Get Started
             </Button>
           </section>
-          <figure className=' max-w-[1100px] max-h-[478px]  mx-auto '>
+          <figure className=' max-w-[1100px] max-h-[478px] md:-mt-[32px]  mx-auto '>
           <Image src="/images/homeimg.svg" alt="Earth View" width={1800} height={550} />
         </figure>
 
@@ -51,6 +52,7 @@ export default function Home() {
       </header >
       <FeatureSection />
       <BenefitSection />
+      {/* <Animate /> */}
       <AchievementSection />
       <CTASection />
       <FAQSection />
