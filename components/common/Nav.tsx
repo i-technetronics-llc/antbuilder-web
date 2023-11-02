@@ -62,7 +62,7 @@ const Nav = ({ inverse }: Props) => {
     );
 
     return (
-        <nav className=' max-w-[1248px] p-[16px] flex items-center justify-between'>
+        <nav className=' max-w-[1248px] m-auto p-[16px] flex items-center justify-between'>
             <Logo />
 
             <div className={`${containerClasses}`}>
@@ -70,7 +70,7 @@ const Nav = ({ inverse }: Props) => {
                     return (
 
                         <Link
-                            className={`text-base font-normal text-trueGray hover:text-primary ${pathname.includes(link.href) ? "text-primary underline underline-offset-2" : ""}`}
+                            className={`text-base font-normal text-trueGray  hover:text-primary ${pathname.includes(link.href) ? "text-blue-600 underline underline-offset-2" : ""}`}
                             key={link.title} href={link.href}>
                             {link.title}
                         </Link>

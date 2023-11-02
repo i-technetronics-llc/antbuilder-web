@@ -7,15 +7,15 @@ import { millik,mukta, openSans } from "../../app/font";
 
 function CoreValues() {
   return (
-    <div className='max-w-[1152px] m-auto my-[64px]'>
+    <div className="max-w-[1152px] m-auto py-[64px] bg-no-repeat bg-center bg-[url(/images/corebg.png)]">
         <div className={`max-w-[1152px]`}>
-        <h1 className={`text-[64px] font-[400] ${millik.className} mb-[48px] text-[#080E1A] `}>
+        <h1 className={`text-[64px] text-center md:text-start font-[400] ${millik.className} mb-[48px] text-[#080E1A] `}>
          Our Core Values
               </h1>
         </div>
 
-<div className="grid grid-cols-2 gap-[64px]">
-        <div className="max-w-sm mx-auto  rounded-xl  overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-[64px]">
+        <div className="max-w-sm mx-auto  rounded-xl  overflow-hidden md:max-w-[546px] min-h-[320px] bg-[#F8FAFF]">
   <div className="md:flex">
     
     <div className="p-4">
@@ -24,7 +24,7 @@ function CoreValues() {
     </div>
   </div>
 </div>
-        <div className="max-w-sm mx-auto  rounded-xl  overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
+        <div className="max-w-sm mx-auto  rounded-xl min-h-[320px] overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
   <div className="md:flex">
     
     <div className="p-4">
@@ -33,16 +33,16 @@ function CoreValues() {
     </div>
   </div>
 </div>
-        <div className="max-w-sm mx-auto  rounded-xl  overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
+        <div className="max-w-sm mx-auto  rounded-xl min-h-[320px]  overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
   <div className="md:flex">
     
-    <div className="p-4">
+    <div className="p-[24px]">
       <div className={`${mukta.className} text-[32px] font-[700]`}>Customer Focus</div>
-      <p className={`${openSans.className} text-[20 px] font-[400]`}>Prioritizing the needs and goals of customers, aiming to understand their requirements and provide software solutions that help their businesses scale fast. This value emphasizes the customer-centric approach mentioned in the vision statements</p>
+      <p className={`${openSans.className} text-[20px] font-[400]`}>Prioritizing the needs and goals of customers, aiming to understand their requirements and provide software solutions that help their businesses scale fast. This value emphasizes the customer-centric approach mentioned in the vision statements</p>
     </div>
   </div>
 </div>
-        <div className="max-w-sm mx-auto  rounded-xl  overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
+        <div className="max-w-sm mx-auto  rounded-xl min-h-[320px] overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
   <div className="md:flex">
     
     <div className="p-4">
@@ -51,7 +51,7 @@ function CoreValues() {
     </div>
   </div>
 </div>
-        <div className="max-w-sm mx-auto  rounded-xl  overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
+        <div className="max-w-sm mx-auto min-h-[320px]  rounded-xl  overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
   <div className="md:flex">
     
     <div className="p-4">
@@ -60,7 +60,7 @@ function CoreValues() {
     </div>
   </div>
 </div>
-        <div className="max-w-sm mx-auto  rounded-xl  overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
+        <div className="max-w-sm mx-auto  rounded-xl min-h-[320px]  overflow-hidden md:max-w-[546px] bg-[#F8FAFF]">
   <div className="md:flex">
     
     <div className="p-4">

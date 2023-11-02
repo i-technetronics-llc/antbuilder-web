@@ -5,8 +5,8 @@ import { millik,mukta, openSans } from "../../app/font";
 
 function HeroSection() {
   return (
-    <div className='flex items-center max-w-[1150px] gap-10 m-auto justify-around mx-12'>
-      <div className=' mb-[116px] max-w-[811px]  mt-[79px]   bg-center bg-auto bg-[url(/images/visionbg.svg)] '>
+    <div className='flex flex-col mb-[90px] md:mb-[116px] md:mx-4  md:flex-row items-center max-w-[1150px] gap-5 md:gap-10 lg:m-auto justify-around '>
+      <div className='  max-w-[811px] text-center md:text-start  mt-[79px]   bg-center bg-auto bg-[url(/images/visionbg.svg)] '>
               <h1 className={`text-[64px] font-[400] ${millik.className} text-[#11223F]  mb-2.5 leading-[61px]`}>
               Our Vision
               </h1>
@@ -15,7 +15,7 @@ function HeroSection() {
 
 
     <div>
-        <figure className='max-w-[280px]'>
+        <figure className='md:max-w-[280px] '>
             <Image src='/images/visionimg.svg' width={280} height={100} alt='hh' />
         </figure>
     </div>
