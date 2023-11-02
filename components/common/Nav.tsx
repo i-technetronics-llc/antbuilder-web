@@ -83,9 +83,11 @@ const Nav = ({ inverse }: Props) => {
                     Log In
                 </button>
                 </Link>
+                <Link href='/get-started'>
                 <button  className='inline-block lg:hidden px-[16px] py-[8px]  border-[1px] border-[#3B82F6] rounded-[40px]'>
                     Get Started
                 </button>
+                </Link>
              
             </div>
 
@@ -97,10 +99,12 @@ const Nav = ({ inverse }: Props) => {
                     Log In
                 </button>
                 </Link>
+                <Link href='/get-started'>
                
                <button className='hidden lg:inline-block px-[16px] py-[8px]  border-[1px] border-[#3B82F6] rounded-[40px]'>
                 Get Started
             </button>  
+                </Link>
              </div>
             
             {/* <button variant='outline' rounded className='hidden lg:inline-block'>
