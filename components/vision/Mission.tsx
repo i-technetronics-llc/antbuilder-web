@@ -5,7 +5,7 @@ import { millik,mukta, openSans } from "../../app/font";
 
 function HeroSection() {
   return (
-    <div className='flex flex-col md:flex-row mb-[107px] md:mx-4 items-center mt-[80px] max-w-[1150px] md:gap-10 lg:m-auto gap-5 justify-around '>
+    <div className='flex flex-col md:flex-row mb-[107px] mx-4 items-center mt-[80px] max-w-[1150px] md:gap-10 lg:m-auto gap-5 justify-around '>
       <div className=' md:mb-[116px] mb-[40px] mt-[97px] max-w-[800px] text-center md:text-right order-2  bg-center bg-auto bg-[url(/images/visionbg.svg)] '>
               <h1 className={`text-[64px] font-[400] ${millik.className} text-[#11223F]  mb-2.5 leading-[61px]`}>
               Our Mission
