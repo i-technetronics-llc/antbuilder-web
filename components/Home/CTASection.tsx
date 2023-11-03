@@ -3,7 +3,7 @@ import Container from '../common/Container'
 import { millik, mukta } from '@/app/font'
 import Button from '../common/Button'
 import { BsChevronRight } from 'react-icons/bs'
-
+import Link from 'next/link'
 const CTASection = () => {
     return (
 
@@ -20,9 +20,11 @@ const CTASection = () => {
     <p className={`mt-[24px] md:text-[28px] mx-auto lg:max-w-[1023px] ${mukta.className} `}>
     Click on the button to get started now
     </p>
+    <Link href='/get-started'>
     <Button Icon={<BsChevronRight />} iconDir='right' variant='inverse' rounded className='py-[16px] mt-[24px] text-[24px] px-[32px] h-[72px]'>
         Get Started
     </Button>
+    </Link>
     </div>
 </section>
 </Container>

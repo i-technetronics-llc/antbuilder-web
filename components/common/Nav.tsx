@@ -70,7 +70,7 @@ const Nav = ({ inverse }: Props) => {
                     return (
 
                         <Link
-                            className={`text-base font-normal text-trueGray  hover:text-primary ${pathname.includes(link.href) ? "text-blue-600 underline underline-offset-2" : ""}`}
+                            className={`text-base font-normal  hover:text-primary ${pathname.includes(link.href) ? "text-blue-600 underline  underline-offset-2" : ""}`}
                             key={link.title} href={link.href}>
                             {link.title}
                         </Link>
@@ -84,7 +84,7 @@ const Nav = ({ inverse }: Props) => {
                 </button>
                 </Link>
                 <Link href='/get-started'>
-                <button  className='inline-block lg:hidden px-[16px] py-[8px]  border-[1px] border-[#3B82F6] rounded-[40px]'>
+                <button  className='inline-block lg:hidden px-[16px] py-[8px]  bg-[#3B82F6] transition hover:opacity-80 hover:scale-95 text-[#FFF] border-[1px] border-[#3B82F6] rounded-[40px]'>
                     Get Started
                 </button>
                 </Link>
@@ -95,13 +95,13 @@ const Nav = ({ inverse }: Props) => {
 
                 {/* large screen */}
                 <Link href='/'>
-                <button  className='hidden lg:inline-block px-[16px] text-black '>
+                <button  className='hidden lg:inline-block  px-[16px] text-black '>
                     Log In
                 </button>
                 </Link>
                 <Link href='/get-started'>
                
-               <button className='hidden lg:inline-block px-[16px] py-[8px]  border-[1px] border-[#3B82F6] rounded-[40px]'>
+               <button className='hidden lg:inline-block px-[16px] py-[8px] bg-[#3B82F6] transition hover:opacity-80 hover:scale-95 text-[#FFF] border-[1px] border-[#3B82F6] rounded-[40px]'>
                 Get Started
             </button>  
                 </Link>

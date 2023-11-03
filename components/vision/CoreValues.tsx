@@ -20,7 +20,7 @@ function CoreValues() {
     
     <div className="p-4">
       <div className={`${mukta.className} text-[32px] font-[700]`}>Collaboration</div>
-      <p className={`${openSans.className} text-[20px] font-[400]`}>Promoting teamwork, open communication, and collaboration among team members and stakeholders. This value supports the emphasis on collaborative software development and involving everyone needed to achieve results</p>
+      <p className={`${openSans.className}  mt-[24px] text-[20px] font-[400]`}>Promoting teamwork, open communication, and collaboration among team members and stakeholders. This value supports the emphasis on collaborative software development and involving everyone needed to achieve results</p>
     </div>
   </div>
 </div>
@@ -29,7 +29,7 @@ function CoreValues() {
     
     <div className="p-4">
       <div className={`${mukta.className} text-[32px] font-[700]`}>Agility</div>
-      <p className={`${openSans.className} text-[20px] font-[400]`}> Emphasizing agility and adaptability in responding to changes in the technology space. This value aligns with the iterative approach mentioned in the vision statement, allowing the organization to quickly adapt and deliver software efficiently.</p>
+      <p className={`${openSans.className}  mt-[24px] text-[20px] font-[400]`}> Emphasizing agility and adaptability in responding to changes in the technology space. This value aligns with the iterative approach mentioned in the vision statement, allowing the organization to quickly adapt and deliver software efficiently.</p>
     </div>
   </div>
 </div>
@@ -38,7 +38,7 @@ function CoreValues() {
     
     <div className="p-[24px]">
       <div className={`${mukta.className} text-[32px] font-[700]`}>Customer Focus</div>
-      <p className={`${openSans.className} text-[20px] font-[400]`}>Prioritizing the needs and goals of customers, aiming to understand their requirements and provide software solutions that help their businesses scale fast. This value emphasizes the customer-centric approach mentioned in the vision statements</p>
+      <p className={`${openSans.className}  mt-[24px] text-[20px] font-[400]`}>Prioritizing the needs and goals of customers, aiming to understand their requirements and provide software solutions that help their businesses scale fast. This value emphasizes the customer-centric approach mentioned in the vision statements</p>
     </div>
   </div>
 </div>
@@ -47,7 +47,7 @@ function CoreValues() {
     
     <div className="p-4">
       <div className={`${mukta.className} text-[32px] font-[700]`}>Excellence</div>
-      <p className={`${openSans.className} text-[20px] font-[400]`}>Striving for excellence in all aspects of software development, maintaining high standards of quality, efficiency, and performance. This value reflects the organization's commitment to building software fast and efficiently</p>
+      <p className={`${openSans.className}  mt-[24px] text-[20px] font-[400]`}>Striving for excellence in all aspects of software development, maintaining high standards of quality, efficiency, and performance. This value reflects the organization's commitment to building software fast and efficiently</p>
     </div>
   </div>
 </div>
@@ -56,7 +56,7 @@ function CoreValues() {
     
     <div className="p-4">
       <div className={`${mukta.className} text-[32px] font-[700]`}>Integrity</div>
-      <p className={`${openSans.className} text-[20px] font-[400]`}>Prioritizing the needs and goals of customers, aiming to understand their requirements and provide software solutions that help their businesses scale fast. This value emphasizes the customer-centric approach mentioned in the vision statement</p>
+      <p className={`${openSans.className}  mt-[24px] text-[20px] font-[400]`}>Prioritizing the needs and goals of customers, aiming to understand their requirements and provide software solutions that help their businesses scale fast. This value emphasizes the customer-centric approach mentioned in the vision statement</p>
     </div>
   </div>
 </div>
@@ -65,7 +65,7 @@ function CoreValues() {
     
     <div className="p-4">
       <div className={`${mukta.className} text-[32px] font-[700]`}>Innovation</div>
-      <p className={`${openSans.className} text-[20px] font-[400]`}>Striving for excellence in all aspects of software development, maintaining high standards of quality, efficiency, and performance. This value reflects the organizations commitment to building software fast and efficiently</p>
+      <p className={`${openSans.className}  mt-[24px] text-[20px] font-[400]`}>Striving for excellence in all aspects of software development, maintaining high standards of quality, efficiency, and performance. This value reflects the organizations commitment to building software fast and efficiently</p>
     </div>
   </div>
 </div>

@@ -11,6 +11,7 @@ import { BsChevronRight } from 'react-icons/bs';
 import { millik, openSans } from "./font";
 import Image from 'next/image'
 import Animate from "@/components/Home/animate";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="pb-10" >
@@ -34,6 +35,8 @@ export default function Home() {
               <p className="text-2xl mt-[12px] font-medium">Test your builds biweekly with our data-driven app development platform</p>
             </div>
 
+
+            <Link href='/get-started'>
             <Button
               className="!text-2xl font-light mt-[24px] py-3 px-5"
               rounded
@@ -42,6 +45,7 @@ export default function Home() {
               iconDir="right">
               Get Started
             </Button>
+            </Link>
           </section>
           <figure className=' max-w-[1100px] max-h-[478px] md:-mt-[32px]  mx-auto '>
           <Image src="/images/homeimg.svg" alt="Earth View" width={1800} height={550} />
