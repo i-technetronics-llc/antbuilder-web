@@ -11,7 +11,7 @@ function FormDetails() {
     </div>
 
 
-<div className='max-w-[480px] mt-[24px]'>
+<div className='max-w-[480px] m-auto mt-[24px]'>
 <form action="" className='flex flex-col gap-[24px] '>
   <div className='flex flex-col'>
     <label htmlFor="name" className={`text-[#6C7480] text-[12px] ${openSans.className} font-[600]`}>Company Name</label>
@@ -26,17 +26,33 @@ function FormDetails() {
 
   <div className='flex flex-col'>
     <label htmlFor="name" className={`text-[#6C7480] text-[12px] ${openSans.className} font-[600]`}>Industry</label>
-    <input type="text" placeholder='Type Here' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} />
+    <select name="" id="" className="{`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] pr- border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`}">
+      <option value="">Select Industry type</option>
+      <option value="">Industry1</option>
+      <option value="">Industry2</option>
+      <option value="">Industry3</option>
+      <option value="">Industry4</option>
+      <option value="">Industry5</option>
+    </select>
+    {/* <input type="text" placeholder='Type Here' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} /> */}
   </div>
 
   <div className='flex flex-col'>
     <label htmlFor="name" className={`text-[#6C7480] text-[12px] ${openSans.className} font-[600]`}>Country Region</label>
-    <input type="text" placeholder='Type Here' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} />
+    <select name="" id="" className="{`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] pr- border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`}">
+      <option value="">Select Country Region</option>
+      <option value="">Country1</option>
+      <option value="">Country2</option>
+      <option value="">Country3</option>
+      <option value="">Country4</option>
+      <option value="">Country5</option>
+    </select>
+    {/* <input type="text" placeholder='Type Here' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} /> */}
   </div>
 
   <div className='flex flex-col'>
     <label htmlFor="name" className={`text-[#6C7480] text-[12px] ${openSans.className} font-[600]`}>Employee Count</label>
-    <input type="text" placeholder='Type Here' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} />
+    <input type="number" placeholder='Type Here' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} />
   </div>
 
   <div className='flex flex-col'>
@@ -46,12 +62,13 @@ function FormDetails() {
 
   <div className='flex flex-col'>
     <label htmlFor="name" className={`text-[#6C7480] text-[12px] ${openSans.className} font-[600]`}>Project Budget</label>
-    <input type="text" placeholder='Type Here' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} />
+    <input type="number" placeholder='Type Here' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} />
   </div>
 
   <div className='flex flex-col'>
     <label htmlFor="name" className={`text-[#6C7480] text-[12px] ${openSans.className} font-[600]`}>Project Description</label>
-    <input type="text" placeholder='Tell us a bit about the app you are interested in building...' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} />
+    <textarea  placeholder='Tell us a bit about the app you are interested in building...' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] resize-y px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`}></textarea>
+    {/* <input type="text" placeholder='Tell us a bit about the app you are interested in building...' className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} /> */}
   </div>
 
 <div className='flex justify-end items-center gap-[16px]' >
