@@ -111,6 +111,8 @@ function FormDetails() {
             )}
           </div>
 
+          
+
           <div className='flex justify-end items-center gap-[16px]'>
             <button type='submit' className={`px-[20px] py-[16px] rounded-[40px] w-[114px] text-[#FFF] bg-[#D0E1FF] ${mukta.className} text-[16px] font-[700]`}>
               Next
