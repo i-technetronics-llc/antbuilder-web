@@ -5,11 +5,15 @@ import { millik, openSans } from "../font";
 import Image from 'next/image'
 // import Footer from "@/components/common/Footer";
 import FormDetails from "@/components/get-started/FormDetails";
+import Form from "@/components/get-started/FormikTest";
+import FormOne from "@/components/get-started/FormikStepOne";
 function page() {
   return (
     <div>
         <Nav />
-        <FormDetails/>
+        <Form />
+        {/* <FormDetails/> */}
+
         <Footer />
     </div>
   )
