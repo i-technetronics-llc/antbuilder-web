@@ -3,6 +3,9 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { millik, mukta, openSans } from "../../app/font";
+import Link from 'next/link'
+import { ArrowLeft} from 'iconsax-react'
+import Success from './success'
 
 const schemaPersonalDetails = Yup.object().shape({
   FirstName: Yup.string().required("First Name is required"),
@@ -12,9 +15,9 @@ const schemaPersonalDetails = Yup.object().shape({
 });
 
 const schemaBusinessDetails = Yup.object().shape({
-  CompanyName: Yup.string().required("Company Name is required"),
+  CompanyName: Yup.string(),
   WebsiteURL: Yup.string()
-    .required("Website URL is required")
+    // .required("Website URL is required")
     .test("custom-url-validation", "Invalid URL", (value) => {
       if (!value) return true;
 
@@ -22,12 +25,12 @@ const schemaBusinessDetails = Yup.object().shape({
         /^(https?:\/\/)?([a-zA-Z0-9_-]+\.)+[a-zA-Z]{2,}(\/[a-zA-Z0-9_-]+)*\/?$/;
       return urlRegex.test(value);
     }),
-  Industry: Yup.string().required("Industry is required"),
-  CountryRegion: Yup.string().required("Country Region is required"),
+  Industry: Yup.string(),
+  CountryRegion: Yup.string(),
   EmployeeCount: Yup.number()
     .integer("Employee Count must be an integer")
-    .positive("Employee Count must be a positive number")
-    .required("Employee Count is required"),
+    .positive("Employee Count must be a positive number"),
+    // .required("Employee Count is required"),
   ProjectTitle: Yup.string().required("Project Title is required"),
   ProjectBudget: Yup.number()
     .positive("Project Budget must be a positive number")
@@ -37,6 +40,7 @@ const schemaBusinessDetails = Yup.object().shape({
 
 function FormDetails() {
   const [step, setStep] = React.useState(1);
+  const [formSubmitted, setFormSubmitted] = React.useState(false);
 
   const nextStep = () => {
     setStep(step + 1);
@@ -68,17 +72,62 @@ function FormDetails() {
 
     validationSchema: schema,
 
-    onSubmit: (values) => {
-      // Handle form submission based on the step
-      if (isLastStep) {
-        console.log("Submit", values);
-      } else {
-        nextStep();
+  //   onSubmit: (values) => {
+  //     // Handle form submission based on the step
+  //     if (isLastStep) {
+  //       console.log("Submitting form:", values);
+  //       formik.submitForm(); // Submit the form
+  //     } else {
+  //       nextStep();
+  //     }
+  // },
+  onSubmit: async (values, { setSubmitting }) => {
+    // Handle form submission based on the step
+    if (isLastStep) {
+      try {
+        // Perform any additional actions you need before submitting (e.g., validation)
+  
+        // Send a POST request to your endpoint
+        const response = await fetch('http://localhost:3001/api/v1/bookings/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            // You may include additional headers as needed
+          },
+          body: JSON.stringify(values),
+        });
+  
+        if (response.ok) {
+          console.log('Form submitted successfully',values);
+          setFormSubmitted(true);
+          formik.resetForm();
+        } else {
+          console.error('Form submission failed:', response.statusText);
+        }
+      } catch (error) {
+        console.error('An error occurred during form submission:', error);
+        // Handle unexpected errors
+      } finally {
+        // You can also setSubmitting to false if you're using it
+        setSubmitting(false);
       }
-    },
-  });
+    } else {
+      nextStep();
+    }
+  },
+  
+    
+   });
 
   return (
+
+    <div>
+ {formSubmitted ? (
+  <Success />
+) : (
+
+
+
     <div
       className={`max-w-[552px] shadow-md border-[1px] rounded-[20px] p-[20px] mt-[30px] m-auto`}
     >
@@ -193,7 +242,7 @@ function FormDetails() {
                 </label>
                 <input
                   type="text"
-                  placeholder="Type z Here"
+                  placeholder="Type  Here"
                   name="Phone"
                   value={formik.values.Phone}
                   onChange={formik.handleChange}
@@ -387,32 +436,50 @@ function FormDetails() {
 
           <div className="flex justify-end items-center gap-[16px]">
             {step === 1 && (
-              <button
-                type="button"
-                onClick={nextStep}
-                className={`px-[20px] py-[16px] rounded-[40px] w-[114px] text-[#FFF] bg-[#D0E1FF] ${mukta.className} text-[16px] font-[700]`}
-              >
-                Next
-              </button>
+              <div className="flex justify-end items-center gap-[16px]">
+                <Link href='/' className='items-center gap-[1px] flex'><ArrowLeft size={16} />
+  <h1 className={`text-[#3B4350] font-[700] text-[18px] inline ${mukta.className}`}>
+     Back </h1>
+</Link>
+            <button
+            type="submit"
+            className={`px-[20px] py-[16px] rounded-[40px] w-[114px] text-[#FFF] bg-[#D0E1FF] ${mukta.className} text-[16px] font-[700]`}
+          >
+            Next
+          </button>
+          </div>
             )}
             {step === 2 && (
+              <div className="flex justify-end items-center gap-[16px]">
               <button
-                type="button"
-                onClick={prevStep}
-                className={`px-[20px] py-[16px] rounded-[40px] w-[114px] text-[#FFF] bg-[#D0E1FF] ${mukta.className} text-[16px] font-[700]`}
-              >
-                Previous
-              </button>
+            type="submit"
+            onClick={prevStep}
+            className='items-center gap-[1px] flex'
+            // className={`px-[20px] py-[16px] rounded-[40px] w-[114px] text-[#FFF] bg-[#D0E1FF] ${mukta.className} text-[16px] font-[700]`}
+          >
+<ArrowLeft size={16} />
+  <h1 className={`text-[#3B4350] font-[700] text-[18px] inline ${mukta.className}`}>
+     Back </h1>
+</button>
+              <button
+              type="submit"
+              className={`px-[20px] py-[16px] rounded-[40px] w-[114px] text-[#FFF] bg-[#D0E1FF] ${mukta.className} text-[16px] font-[700]`}
+            >
+              Next
+            </button>
+              </div>
             )}
-            <button
-              type="button"
+            {/* <button
+              type="submit"
               className={`px-[20px] py-[16px] rounded-[40px] w-[114px] text-[#FFF] bg-[#D0E1FF] ${mukta.className} text-[16px] font-[700]`}
             >
               {isLastStep ? "Submit" : "Next"}
-            </button>
+            </button> */}
           </div>
         </form>
       </div>
+    </div>
+    )}
     </div>
   );
 }
