@@ -1,4 +1,4 @@
-"use client"
+
 import type { Metadata } from 'next'
 import { mukta } from './font'
 import './globals.css'
