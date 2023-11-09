@@ -6,11 +6,12 @@ import Image from 'next/image'
 // import Footer from "@/components/common/Footer";
 import FormDetails from "@/components/get-started/FormDetails";
 import Form from "@/components/get-started/FormikTest";
-import FormOne from "@/components/get-started/FormikStepOne";
+// import FormOne from "@/components/get-started/FormikStepOne";
 function page() {
   return (
     <div>
         <Nav />
+        {/* <FormOne /> */}
         <Form />
         {/* <FormDetails/> */}
 

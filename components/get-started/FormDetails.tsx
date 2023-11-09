@@ -64,7 +64,7 @@ function FormDetails() {
 <div className='max-w-[480px] m-auto mt-[24px]'>
 <form onSubmit={handleFormSubmit}  className='flex flex-col gap-[24px] '>
   <div className='flex flex-col'>
-    <label htmlFor="name" className={`text-[#6C7480] text-[12px] ${openSans.className} font-[600]`}> Name</label>
+    <label htmlFor="name" className={`text-[#6C7480] text-[12px] ${openSans.className} font-[600]`}>Company Name</label>
     <input type="text" placeholder='Type Here' value={formData.CompanyName} name='CompanyName' onChange={handleChange} className={`border-[1px] placeholder:text-[16px] placeholder:font-[400] py-[16px] px-[8px] border-[#E5E5E5] bg-[#F8F8F8] rounded-[5px]  mt-[10px] ${mukta.className} text-[14px]`} />
   </div>
 
