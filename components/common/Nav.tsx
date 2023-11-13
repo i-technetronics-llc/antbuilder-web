@@ -29,6 +29,10 @@ const links = [
         title: "Blog",
         href: "#"
     },
+    {
+        title: "Careers",
+        href: "/careers"
+    },
 ]
 
 const Nav = ({ inverse }: Props) => {
