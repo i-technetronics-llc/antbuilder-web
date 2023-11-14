@@ -10,7 +10,7 @@ function HeroSection() {
               <h1 className={`text-[64px] font-[400] ${millik.className} text-[#11223F]  mb-2.5 leading-[61px]`}>
               Our Vision
               </h1>
-              <p className={`text-[#3B4350] mt-[48px]  max-w-[800px] text-[24px] font-[500] ${mukta.className}`}>Our vision is to build softwares fast, efficiently, in an iterative manner and collaborative with the help of the every body needed to achieve results as fast as possible and sticking with the change in the technology space.</p>
+              <p className={`text-[#3B4350] mt-[48px]  max-w-[800px] text-[24px] font-[500] ${mukta.className}`}>Our vision is to build softwares fast, efficiently, in an iterative and collaborative manner  with the help of the every body needed to achieve results as fast as possible and sticking with the change in the technology space.</p>
     </div>
 
 
