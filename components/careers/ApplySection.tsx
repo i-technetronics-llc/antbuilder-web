@@ -5,7 +5,7 @@ import { openSans,millik,mukta} from "@/app/font";
 function ApplySection() {
   return (
     <div>
-        <p className={`${mukta.className} text-[24px] mb-[15px] mt-[79px] text-center m-auto text-[#3B4350]  mt- font-[500] max-w-[705px]`}>Apply for the role you’re best suited for by sending your resume to</p>
+        <p className={`${mukta.className} text-[24px] mb-[15px] mt-[79px] text-center m-auto text-[#3B4350]   font-[500] max-w-[1113px]`}>AntBuilder is at the forefront of innovative software and app development, specializing in crafting cutting-edge solutions for businesses across diverse industries. With a commitment to excellence and a passion for leveraging technology to drive success, AntBuilder is a dynamic force in the digital landscape. Our team thrives on creativity, collaboration, and a relentless pursuit of delivering tailor-made solutions that exceed expectations. Join the AntBuilder team as we pave the way for the future of digital transformation.</p>
         <button className={`m-auto flex items-center bg-[#1E3866] py-[8px] gap-[15.75px] px-[16px] rounded-[39px] `}>
              <Image src="/images/anticon.png" width={30} height={40} alt="icon" />
              <h1 className={`text-[#FFFFFF] text-[24px] font-[600]`}>@antbuilder.tech</h1>

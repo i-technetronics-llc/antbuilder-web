@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from "@/components/common/Footer";
 import Nav from "@/components/common/Nav";
 import HeroSection from "@/components/careers/HeroSection";
-import Card from "@/components/careers/CareerCard";
+import Card from "@/components/careers/CareerCards";
 import Apply from "@/components/careers/ApplySection";
 
 function page() {
