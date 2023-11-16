@@ -178,6 +178,8 @@ const Instagram = ({ size = 24 }) => (
     <path
       d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z"
       // stroke="#FF8A65"
+      stroke="#FFFFFF"
+
       stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -185,13 +187,15 @@ const Instagram = ({ size = 24 }) => (
     <path
       d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"
       // stroke="#FF8A65"
+      stroke="#FFFFFF"
+
       stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
     ></path>
     <path
       d="M17.636 7h.012"
-      // stroke="#FF8A65"
+      stroke="#FFFFFF"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
