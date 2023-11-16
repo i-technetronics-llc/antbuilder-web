@@ -21,7 +21,7 @@ const Header = () => {
         <button
           className={`bg-[#D0E1FF] ${openSans.className} text-[16px]  font-[600] rounded-[8px] py-[4px] px-[8px] text-[#11223F]`}
         >
-          Full Time
+          Part Time
         </button>
         <button
           className={`bg-[#D0E1FF] ${openSans.className} text-[16px] font-[600] rounded-[8px] py-[4px] px-[8px] text-[#11223F]`}

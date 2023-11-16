@@ -38,6 +38,8 @@ const schemaBusinessDetails = Yup.object().shape({
   ProjectDescription: Yup.string().required("Project Description is required"),
 });
 
+
+
 function FormDetails() {
   const [step, setStep] = React.useState(1);
   const [formSubmitted, setFormSubmitted] = React.useState(false);
@@ -71,28 +73,14 @@ function FormDetails() {
     },
 
     validationSchema: schema,
-
-  //   onSubmit: (values) => {
-  //     // Handle form submission based on the step
-  //     if (isLastStep) {
-  //       console.log("Submitting form:", values);
-  //       formik.submitForm(); // Submit the form
-  //     } else {
-  //       nextStep();
-  //     }
-  // },
   onSubmit: async (values, { setSubmitting }) => {
-    // Handle form submission based on the step
     if (isLastStep) {
       try {
-        // Perform any additional actions you need before submitting (e.g., validation)
   
-        // Send a POST request to your endpoint
         const response = await fetch('http://localhost:3001/api/v1/bookings/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            // You may include additional headers as needed
           },
           body: JSON.stringify(values),
         });
@@ -106,9 +94,7 @@ function FormDetails() {
         }
       } catch (error) {
         console.error('An error occurred during form submission:', error);
-        // Handle unexpected errors
       } finally {
-        // You can also setSubmitting to false if you're using it
         setSubmitting(false);
       }
     } else {
