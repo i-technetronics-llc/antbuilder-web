@@ -19,29 +19,8 @@ const cardData = [
     link: "/careers/account-executive",
 
   },
-  {
-    title: "Account Executive ",
-    description: " As an Account Executive at Antbuilder, you play a pivotal role in driving our business growth and revenue. Your main responsibility is to identify potential clients and demonstrate how our innovative development approach, products, and services can help them bring their unique app ideas to life or enhance their existing applications to meet modern trends and technology.",
-    apply: "Think this is you? Apply Now!",
-    tags: ["100% Remote", "Full Time","Sales"],
-    link: "/careers/account-executive",
+ 
 
-  },
-  {
-    title: "Account Executive ",
-    description: " As an Account Executive at Antbuilder, you play a pivotal role in driving our business growth and revenue. Your main responsibility is to identify potential clients and demonstrate how our innovative development approach, products, and services can help them bring their unique app ideas to life or enhance their existing applications to meet modern trends and technology.",
-    apply: "Think this is you? Apply Now!",
-    tags: ["100% Remote", "Full Time","Sales"],
-    link: "/careers/account-executive",
-
-  },
-  {
-    title: "Account Executive ",
-    description: " As an Account Executive at Antbuilder, you play a pivotal role in driving our business growth and revenue. Your main responsibility is to identify potential clients and demonstrate how our innovative development approach, products, and services can help them bring their unique app ideas to life or enhance their existing applications to meet modern trends and technology.",
-    apply: "Think this is you? Apply Now!",
-    tags: ["100% Remote", "Full Time","Sales"],
-    link: "/careers/account-executive",
-  }
 ];
 
 const Cards: React.FC<CardsProps> = ({ title, description, apply, tags, link }) => (
