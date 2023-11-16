@@ -84,7 +84,16 @@ export default function Footer() {
                 rel="noopener"
               >
                 <span className="sr-only">Facebook</span>
-                <Facebook  size={30} />
+                <Facebook size={30} />
+              </Link>
+              <Link
+                className="dark:text-trueGray-900 -mt-1"
+                href={AppConfig.social.instagram}
+                target="_blank"
+                rel="noopener"
+              >
+                <span className="sr-only">Instagram</span>
+                <Instagram size={30} />
               </Link>
 
               <a
@@ -154,7 +163,38 @@ const Facebook = ({ size = 24 }) => (
   >
     <path
       d="M17.5 1.5H3.5C2.4 1.5 1.5 2.4 1.5 3.5V17.5C1.5 18.601 2.4 19.5 3.5 19.5H10.5V12.5H8.5V10.025H10.5V7.975C10.5 5.811 11.712 4.291 14.266 4.291L16.069 4.293V6.898H14.872C13.878 6.898 13.5 7.644 13.5 8.336V10.026H16.068L15.5 12.5H13.5V19.5H17.5C18.6 19.5 19.5 18.601 19.5 17.5V3.5C19.5 2.4 18.6 1.5 17.5 1.5Z"
-        fill="currentColor"
+      fill="currentColor"
     />
+  </svg>
+);
+const Instagram = ({ size = 24 }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path
+      d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z"
+      stroke="#FF8A65"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>
+    <path
+      d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"
+      stroke="#FF8A65"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>
+    <path
+      d="M17.636 7h.012"
+      stroke="#FF8A65"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>
   </svg>
 );
