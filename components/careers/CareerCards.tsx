@@ -25,7 +25,7 @@ const cardData = [
 
 const Cards: React.FC<CardsProps> = ({ title, description, apply, tags, link }) => (
   <div
-    className={`max-w-[917px] min-h-[249px] bg-[#FFFFFF] p-[32px] rounded-[16px]`}
+    className={`max-w-[917px] min-h-[249px] bg-[#FFFFFF] p-[20px] md:p-[32px] rounded-[16px]`}
   >
     <div>
       <h1
@@ -46,8 +46,8 @@ const Cards: React.FC<CardsProps> = ({ title, description, apply, tags, link }) 
         {apply}
       </p>
 
-      <div className='flex items-center justify-between mt-[24px]'>
-        <Link href={link}>
+      <div className='flex flex-col md:flex-row gap-4 md:items-center justify-between mt-[24px]'>
+        <Link href={link} className="items-center flex m-auto md:m-0">
           <button
             className={`text-[16px] ${mukta.className} text-[#0A2656] border rounded-[40px] py-[8px] px-[16px] border-[#0A2656] hover:opacity-80 hover:scale-95 transition `}
           >
@@ -55,7 +55,7 @@ const Cards: React.FC<CardsProps> = ({ title, description, apply, tags, link }) 
           </button>
         </Link>
 
-        <div className={`flex justify-end items-center gap-[16px]`}>
+        <div className={`flex flex-col md:flex-row md:justify-end md:items-center gap-[16px]`}>
           {tags.map((tag) => (
             <button key={tag} className={`bg-[#D0E1FF] ${openSans.className} text-[16px] font-[600] rounded-[8px] py-[4px] px-[8px] text-[#11223F]`}>{tag}</button>
           ))}
@@ -68,7 +68,7 @@ const Cards: React.FC<CardsProps> = ({ title, description, apply, tags, link }) 
 function CareerCards() {
   return (
     <div
-      className={`max-w-[998px] p-[40px] bg-[#0A2656] m-auto rounded-[16px] flex flex-col gap-[40px]`}
+      className={`max-w-[998px] p-[16px] md:p-[40px] bg-[#0A2656] m-auto rounded-[16px] flex flex-col gap-[40px]`}
     >
       {cardData.map((card) => (
         <Cards key={card.title}  {...card}/>
